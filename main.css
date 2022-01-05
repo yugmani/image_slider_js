@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 70vh;
+  flex: 0 0 70%;
+  background: url("./image/akin-unsplash.jpg") center/cover no-repeat;
+  position: relative;
+  border: 2px solid navy;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(49, 47, 47);
+  color: black;
+  border: 1px solid navy;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px gray;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.fas {
+  font-size: 4rem;
+}
+
+.prevBtn {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+  top: 50%;
+  right: 0%;
+  transform: translate(50%, -50%);
+}
+
+.btn:active {
+  background: bisque;
+  box-shadow: 1px 1px 2px yellow;
+}
+
+.btn:hover {
+  background: beige;
+  box-shadow: 1px 1px 2px yellow;
+}
+
+.legend {
+  color: beige;
+  font-size: 2rem;
+  top: 110%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
