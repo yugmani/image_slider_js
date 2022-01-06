@@ -19,6 +19,11 @@ const legendEl = document.querySelector(".legend");
 let index = 0;
 
 const slidePreviousImage = () => {
+  containerEl.animate([{ opacity: 0.1 }, { opacity: 1.0 }], {
+    duration: 1000,
+    fill: "forwards",
+  });
+
   index--;
   if (index === -1) {
     index = photos.length - 1;
@@ -30,6 +35,10 @@ const slidePreviousImage = () => {
 prevBtn.addEventListener("click", slidePreviousImage);
 
 const slideNextImage = () => {
+  containerEl.animate([{ opacity: 0.1 }, { opacity: 1.0 }], {
+    duration: 1000,
+    fill: "forwards",
+  });
   index++;
   if (index === photos.length) {
     index = 0;
